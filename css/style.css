@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,500,700|Khula|Abril+Fatface');
+
+
+
+body {
+  font-family: "Khula", sans-serif;
+}
+
+
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 30px;
+	margin-top: 5px !important;
+}
+
+form>div>h4, .skills h4 {
+    font-family: 'Abril+Fatface';
+    font-size: 3rem;
+    padding: 15px;
+    font-weight: bold;
+
+}
+
+p {
+    font-family: "Khula";
+    font-size: 2rem;
+}
+
+.title{
+    font-family: 'Abril+Fatface';
+    font-size: 7rem;
+    padding-top: 15px;
+    text-decoration: none;
+    color: Black;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index : 1;
+    margin-bottom: 5px;
+}
+
+.title:before {
+  content : "";
+  position: absolute;
+  left:40%;
+  right: 40%;
+
+  bottom  : 0;
+  height  : 1px;
+  width   : 20%;  /* or 100px */
+  border-bottom:1px solid;
+}
+
+
+/*small screen menu */
+
+.small_screen {
+    visibility: hidden;
+    height: 1px;
+}
+
+header{
+    display: none;
+}
+
+
+
+/*small screen photo*/
+
+.photo{
+    visibility: hidden;
+    height: 1px;
+    padding-top: 20
+}
+
+/*big screen menu*/
+
+.big_screen{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 7vh;
+}
+
+.top>button, .middle>button, .bottom>button{
+    border: none;
+    background-color: transparent;
+    outline:none;
+}
+
+
+.title_hover{
+    font-family: 'Abril+Fatface';
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-top: 20px;
+    text-decoration: none;
+    color: Black;
+    font-weight: bold;
+}
+
+.title_hover:hover{
+    transition: transform 0.5s;
+    transform: scale(1.2);
+    color: Black;
+    text-decoration: none;
+}
+
+.top{
+    padding-bottom: 7vw;
+}
+
+.bottom{
+    padding-top: 7vh;
+}
+
+.top, .middle, .bottom{
+    text-align: center;
+}
+
+.middle{
+    padding-top: 13rem;
+}
+
+.menu_photo{
+    padding: 0 !important;
+}
+
+.menu_photo img{
+    color:white;
+    background-image: url(../images/blink.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+    max-height: 700px;
+
+}
+
+/*about*/
+
+.about{
+    background-color: #DBEFF5;
+    padding-top: 20px;
+    min-height: 80vh;
+}
+
+.about h3{
+    padding-bottom: 3vh;
+}
+
+.about p{
+    text-align: left;
+}
+
+
+/*skills*/
+
+
+.devicon{
+    width: 2vw;
+    font-size: 4vw;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*.service>p, .service>i{
+    padding: 2vw;
+}*/
+
+.service>p{
+    font-size: 2.5rem;
+    padding-left: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 2vw;
+}
+
+#skills .row {
+    padding-top: 20px;
+}
+
+
+/*work */
+
+
+.work {
+	padding-bottom: 30px;
+    background-color: #098CB3;
+    color: white;
+}
+.work h2{
+    color: white;
+}
+
+.work .col-md-3,
+.work .container-fluid {
+	padding: 0;
+	line-height: 0;
+}
+
+.container-fluid>div{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 4vw;
+}
+
+.image-wrapper {
+	position: relative;
+}
+
+.gradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	color: #ffffff;
+	display: none;
+    background: -moz-linear-gradient(top, rgba(219,239,245,1) 0%, rgba(219,239,245,0.8) 0%, rgba(9,140,179,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(219,239,245,0.8) 0%,rgba(219,239,245,0.8) 1%,rgba(9,140,179,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(219,239,245,0.8) 0%,rgba(219,239,245,0.8) 1%,rgba(9,140,179,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeff5', endColorstr='#098cb3',GradientType=0 ); /* IE6-9 */
+}
+
+.image-wrapper:hover .gradient {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+.work ul {
+	list-style-type: none;
+	padding: 0;
+	line-height: 1;
+}
+
+.work ul>li:first-child {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 20px;
+	margin-bottom: 8px;
+}
+
+.work ul>li:nth-child(2) {
+	font-family: 'Abril+Fatface', sans-serif;
+	font-style: italic;
+	font-size: 15px;
+}
+
+
+
+
+.link{
+    target-name:new;
+    target-new:tab;
+}
+
+
+
+
+/*portfolio*/
+
+.projects{
+    background-color: #DBEFF5;
+}
+
+.ex_portfolio{
+    padding: 5rem !important;
+}
+
+.image{
+    target-name:new;
+    target-new:tab;
+}
+
+.image>img:hover {
+
+    opacity: 0.5;
+	transition: .3s linear;
+}
+
+
+
+.project_title{
+    text-align: center;
+    font-size: 5rem;
+    font-style: bold;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 17rem / 2);
+    opacity: 0;
+    color: black;
+    transition: opacity .2s linear;
+
+}
+
+.image:hover span{
+    opacity: 1;
+}
+
+/*form*/
+
+.contact{
+    background-color: #DBEFF5;
+    padding-bottom: 2vh;
+}
+
+textarea.form-control{
+    height: 10rem !important;
+}
+
+
+
+/* Style all font awesome icons */
+
+.Social_mecia_title{
+    padding-bottom: 30px;
+}
+.fa {
+    display:inline !important;
+    padding: 2rem;
+    font-size: 3rem !important;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-github, .fa-linkedin {
+    background: #098CB3;
+    color: white;
+}
+
+/*footer*/
+
+footer{
+    background-color: #098CB3;
+    color: white;
+}
+
+
+@media (min-width: 1200px) {
+    .middle{
+        padding-top: 150px;
+    }
+}
+
+@media(min-width: 992px) {
+    .service:hover{
+        transition: transform 0.5s;
+        transform: scale(1.1);
+        font-weight: bold;
+        color: Black;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+   body {
+     padding:0;
+   }
+
+   .container {
+     padding:0!important;
+     margin:0;
+   }
+
+   header{
+       visibility: visible;
+       color: #098CB3;
+       background-color: #DBEFF5;
+   }
+
+   .title{
+       font-size: 11vw;
+   }
+
+
+   .hamburger {
+       padding: 15px;
+       float: right;
+   }
+
+   nav>div>a>div {
+     border-bottom: 4px solid white;
+     width: 35px;
+     margin-bottom: 6px;
+   }
+
+   .menu {
+     overflow: hidden;
+   }
+
+   .slide-down {
+     max-height: 40em;
+   }
+
+   nav>div>ul{
+        background: #098CB3;
+        max-height: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        transition: max-height 1s linear;
+        -webkit-transition: max-height 1s linear;
+        -moz-transition: max-height 1s linear;
+        -ms-transition: max-height 1s linear;
+        -o-transition: max-height 1s linear;
+    }
+
+   nav>div>ul>li {
+     width: 100%;
+     text-decoration: none;
+   }
+
+   nav>div>ul>li>a{
+       text-decoration: none;
+       color: white;
+       line-height: 40px;
+       font-weight: 900;
+   }
+
+   nav>div>ul>li:hover {
+       background-color: #A3E0F2;
+   }
+
+   nav>div>ul>li:hover>a {
+       text-decoration: none;
+       color: #098CB3;
+   }
+
+    #logo {
+   	line-height: 55px;
+   	text-transform: uppercase;
+   	transition: .6s;
+   	font-weight: 900;
+    padding-left: 15px;
+   }
+
+
+
+/*small screen photo*/
+
+.small_screen {
+    visibility: visible;
+    height: auto;
+}
+   .photo{
+       visibility: visible;
+       height: auto;
+   }
+
+   .big_screen{
+       display: none;
+   }
+
+   /*skills*/
+
+   .skills{
+       padding-left: 15px;
+   }
+   .devicon{
+       font-size: xx-large;
+   }
+
+
+   /*work*/
+
+   .gap{
+       display: none;
+   }
+
+   .work>div>.col-sm-12{
+       padding: 15px;
+   }
+
+   /*contact*/
+
+
+   .social{
+       padding-bottom: 20px;
+   }
+
+   }
