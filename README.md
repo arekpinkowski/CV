@@ -1,3 +1,3 @@
 # My-website
 
-link: https://arekpinkowski.github.io/MyWebsiteJQuery/#
+link: https://arekpinkowski.github.io/CV
