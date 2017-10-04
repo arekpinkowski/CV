@@ -1,3 +1,3 @@
 # My-website
 
-link: https://arekpinkowski.github.io/CV
+link: https://arekpinkowski.github.io/CV/
