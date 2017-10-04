@@ -173,12 +173,8 @@ header{
 .service{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
-
-
-/*.service>p, .service>i{
-    padding: 2vw;
-}*/
 
 .service>p{
     font-size: 2.5rem;
@@ -187,8 +183,17 @@ header{
     padding-bottom: 2vw;
 }
 
+#skills {
+    padding-left: 0;
+}
+
 #skills .row {
     padding-top: 20px;
+}
+
+#skills>.container>div>div{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
