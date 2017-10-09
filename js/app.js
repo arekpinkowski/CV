@@ -61,29 +61,29 @@ $('html, body').animate({
 })
 
 //on mouseover
-
+//
 $("#Front-end").mouseenter(function(){
-    $(".img").css("background-image", "url(./images/up.jpg)")
+    $(".top_picture").css("z-index", "11")
 }).mouseleave(function(){
-    $(".img").css("background-image", "url(./images/blink.gif)")
+    $(".top_picture").css("z-index", "9")
 });
 
 $("#WhoIam").mouseenter(function(){
-    $(".img").css("background-image", "url(./images/left1.1.jpg)")
+    $(".left_picture").css("z-index", "11")
 }).mouseleave(function(){
-    $(".img").css("background-image", "url(./images/blink.gif)")
+    $(".left_picture").css("z-index", "8")
 });
 
 $("#MyProjects").mouseenter(function(){
-    $(".img").css("background-image", "url(./images/right1.1.jpg)")
+    $(".right_picture").css("z-index", "11")
 }).mouseleave(function(){
-    $(".img").css("background-image", "url(./images/blink.gif)")
+    $(".right_picture").css("z-index", "7")
 });
 
 $("#ContactMe").mouseenter(function(){
-    $(".img").css("background-image", "url(./images/down.jpg)")
+    $(".bottom_picture").css("z-index", "11")
 }).mouseleave(function(){
-    $(".img").css("background-image", "url(./images/blink.gif)")
+    $(".bottom_picture").css("z-index", "6")
 });
 
 

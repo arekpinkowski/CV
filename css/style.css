@@ -105,6 +105,7 @@ header{
     text-decoration: none;
     color: Black;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .title_hover:hover{
@@ -128,21 +129,54 @@ header{
 
 .middle{
     padding-top: 13rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .menu_photo{
     padding: 0 !important;
 }
 
-.menu_photo img{
+.menu_photo .img{
     color:white;
-    background-image: url(../images/blink.gif);
+    min-height: 350px;
+    max-height: 700px;
+}
+
+img[class*="picture"]{
+    position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 350px;
-    max-height: 700px;
+    width: 100%;
+    height: 100%;
+    min-width: 375px;
+}
 
+.main_picture{
+    background-image: url(../images/blink.gif);
+    z-index: 10;
+}
+
+.top_picture{
+    background-image: url(../images/up.jpg);
+    z-index: 9;
+}
+
+.left_picture{
+    background-image: url(../images/left1.1.jpg);
+    z-index: 8;
+}
+
+.right_picture{
+    background-image: url(../images/right1.1.jpg);
+    z-index: 7;
+}
+
+.bottom_picture{
+    background-image: url(../images/down.jpg);
+    z-index: 6;
 }
 
 /*about*/
@@ -374,6 +408,7 @@ footer{
     .middle{
         padding-top: 150px;
     }
+
 }
 
 @media(min-width: 992px) {
@@ -384,9 +419,19 @@ footer{
         color: Black;
     }
 
+    img[class*="picture"]{
+        min-width: 485px;
+    }
+
+
 }
 
-
+@media(max-width: 992px){
+    /*big screen menu*/
+    .title_hover{
+        font-size: 3rem;
+    }
+}
 
 @media (max-width: 768px) {
 
@@ -487,6 +532,8 @@ footer{
    .big_screen{
        display: none;
    }
+
+
 
    /*skills*/
 
