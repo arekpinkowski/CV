@@ -5,12 +5,23 @@ $(document).ready(function(){
         $('.menu').toggleClass('slide-down');
     });
 
-//on click small screen
 
-var bio =$("#bio");
-var skills = $("#skills");
-var work = $("#work");
-var form = $("#form");
+    var front_end = $('#front_end');
+    var who_i_am = $('#who_i_am');
+    var my_projects = $('#my_projects');
+    var contact_me = $('#contact_me');
+
+    var bio =$("#bio");
+    var skills = $("#skills");
+    var work = $("#work");
+    var form = $("#form");
+
+    var top_picture = $(".top_picture");
+    var left_picture = $(".left_picture");
+    var right_picture = $(".right_picture");
+    var bottom_picture = $(".bottom_picture");
+
+//on click small screen
 
 $('#menu1').click(function() {
 $('html, body').animate({
@@ -37,86 +48,56 @@ $('html, body').animate({
 })
 
 //on click big screen
-var Front_end = $('#Front-end');
-var WhoIam = $('#WhoIam');
-var MyProjects = $('#MyProjects');
-var ContactMe = $('#ContactMe');
 
-
-WhoIam.click(function() {
+who_i_am.click(function() {
 $('html, body').animate({
     scrollTop: bio.offset().top
 }, 700);
 })
 
-Front_end.click(function() {
+front_end.click(function() {
 $('html, body').animate({
     scrollTop: skills.offset().top
 }, 1000);
 })
 
-MyProjects.click(function() {
+my_projects.click(function() {
 $('html, body').animate({
     scrollTop: work.offset().top
 }, 1000);
 })
 
-ContactMe.click(function() {
+contact_me.click(function() {
 $('html, body').animate({
     scrollTop: form.offset().top
 }, 1000);
 })
 
 //on mouseover
-var top_picture = $(".top_picture");
-var left_picture = $(".left_picture");
-var right_picture = $(".right_picture");
-var bottom_picture = $(".bottom_picture");
 
-Front_end.mouseenter(function(){
+front_end.mouseenter(function(){
     top_picture.css("z-index", "11")
 }).mouseleave(function(){
     top_picture.css("z-index", "9")
 });
 
-WhoIam.mouseenter(function(){
+who_i_am.mouseenter(function(){
     left_picture.css("z-index", "11")
 }).mouseleave(function(){
     left_picture.css("z-index", "8")
 });
 
-MyProjects.mouseenter(function(){
+my_projects.mouseenter(function(){
     right_picture.css("z-index", "11")
 }).mouseleave(function(){
     right_picture.css("z-index", "7")
 });
 
-ContactMe.mouseenter(function(){
+contact_me.mouseenter(function(){
     bottom_picture.css("z-index", "11")
 }).mouseleave(function(){
     bottom_picture.css("z-index", "6")
 });
-
-
-//Blink
-
-// setInterval(function(){
-//     setTimeout(()=>{
-//     $(".img").css("background-image", "url(../projekt/images/open_kopia.jpg)")
-//     clearTimeout();
-// },80);
-//     setTimeout(()=>{
-//     $(".img").css("background-image", "url(../projekt/images/closed_kopia.jpg)")
-//     clearTimeout();
-// },2000);
-// },2080)
-
-
-// $(".image").mouseenter(function(){
-//     $(".project_title").css("opacity", "0.3")
-// }).mouseleave(function(){
-//     $(".project_title").css("opacity", "0")
-// });
 
 // email
 
