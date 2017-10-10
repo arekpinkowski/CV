@@ -1,89 +1,100 @@
 $(document).ready(function(){
-    console.log("ok");
 
     $('.hamburger').on('click', function(e) {
-      e.preventDefault();
-      $('.menu').toggleClass('slide-down');
+        e.preventDefault();
+        $('.menu').toggleClass('slide-down');
     });
 
-
-
-
 //on click small screen
+
+var bio =$("#bio");
+var skills = $("#skills");
+var work = $("#work");
+var form = $("#form");
+
 $('#menu1').click(function() {
 $('html, body').animate({
-    scrollTop: $("#bio").offset().top
+    scrollTop: bio.offset().top
 }, 700);
 })
 
 $('#menu2').click(function() {
 $('html, body').animate({
-    scrollTop: $("#skills").offset().top
+    scrollTop: skills.offset().top
 }, 1000);
 })
 
 $('#menu3').click(function() {
 $('html, body').animate({
-    scrollTop: $("#work").offset().top
+    scrollTop: work.offset().top
 }, 1000);
 })
 
 $('#menu4').click(function() {
 $('html, body').animate({
-    scrollTop: $("#form").offset().top
+    scrollTop: form.offset().top
 }, 1000);
 })
 
 //on click big screen
+var Front_end = $('#Front-end');
+var WhoIam = $('#WhoIam');
+var MyProjects = $('#MyProjects');
+var ContactMe = $('#ContactMe');
 
-$('#WhoIam').click(function() {
+
+WhoIam.click(function() {
 $('html, body').animate({
-    scrollTop: $("#bio").offset().top
+    scrollTop: bio.offset().top
 }, 700);
 })
 
-$('#Front-end').click(function() {
+Front_end.click(function() {
 $('html, body').animate({
-    scrollTop: $("#skills").offset().top
+    scrollTop: skills.offset().top
 }, 1000);
 })
 
-$('#MyProjects').click(function() {
+MyProjects.click(function() {
 $('html, body').animate({
-    scrollTop: $("#work").offset().top
+    scrollTop: work.offset().top
 }, 1000);
 })
 
-$('#ContactMe').click(function() {
+ContactMe.click(function() {
 $('html, body').animate({
-    scrollTop: $("#form").offset().top
+    scrollTop: form.offset().top
 }, 1000);
 })
 
 //on mouseover
-//
-$("#Front-end").mouseenter(function(){
-    $(".top_picture").css("z-index", "11")
+var top_picture = $(".top_picture");
+var left_picture = $(".left_picture");
+var right_picture = $(".right_picture");
+var bottom_picture = $(".bottom_picture");
+
+Front_end.mouseenter(function(){
+    top_picture.css("z-index", "11")
 }).mouseleave(function(){
-    $(".top_picture").css("z-index", "9")
+    top_picture.css("z-index", "9")
 });
 
-$("#WhoIam").mouseenter(function(){
-    $(".left_picture").css("z-index", "11")
+WhoIam.mouseenter(function(){
+    left_picture.css("z-index", "11")
 }).mouseleave(function(){
-    $(".left_picture").css("z-index", "8")
+    left_picture.css("z-index", "8")
 });
 
-$("#MyProjects").mouseenter(function(){
-    $(".right_picture").css("z-index", "11")
+MyProjects.mouseenter(function(){
+    right_picture.css("z-index", "11")
 }).mouseleave(function(){
-    $(".right_picture").css("z-index", "7")
+    right_picture.css("z-index", "7")
 });
 
-$("#ContactMe").mouseenter(function(){
-    $(".bottom_picture").css("z-index", "11")
+ContactMe.mouseenter(function(){
+    bottom_picture.css("z-index", "11")
 }).mouseleave(function(){
-    $(".bottom_picture").css("z-index", "6")
+    bottom_picture.css("z-index", "6")
 });
 
 
